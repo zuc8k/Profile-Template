@@ -28,8 +28,11 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
 :focus-visible{outline:2px solid var(--gold);outline-offset:4px;border-radius:6px}
 .ltr{direction:ltr;unicode-bidi:isolate}
 .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
-#gl{position:absolute;inset:0;width:100%;height:100%;display:block}
-.vig{position:absolute;inset:0;pointer-events:none;background:radial-gradient(120% 90% at 50% 50%,transparent 55%,rgba(7,8,11,.82) 100%)}
+#gl{position:absolute;inset:0;z-index:1;width:100%;height:100%;display:block}
+.halloweenBackdrop{position:fixed;inset:-14px;z-index:0;overflow:hidden;pointer-events:none}
+.halloweenBackdrop::before{content:"";position:absolute;inset:0;background:url("images/Halloween banner.jpg") center 48%/cover no-repeat;filter:blur(11px) brightness(.43) saturate(.72);transform:scale(1.04)}
+.halloweenBackdrop::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(7,8,11,.48),rgba(7,8,11,.3) 48%,rgba(7,8,11,.76)),radial-gradient(120% 90% at 50% 50%,transparent 38%,rgba(7,8,11,.72) 100%)}
+.vig{position:absolute;z-index:2;inset:0;pointer-events:none;background:radial-gradient(120% 90% at 50% 50%,transparent 55%,rgba(7,8,11,.52) 100%)}
 
 /* chrome */
 .bar{position:absolute;inset:0 0 auto 0;z-index:20;display:flex;justify-content:space-between;align-items:center;padding:14px var(--gut)}

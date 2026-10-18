@@ -4,7 +4,7 @@
 The site uses clean URLs ( /what-i-do, /vetox ... ) via history.pushState,
 so any path that isn't a real file is served index.html instead of a 404.
 
-Usage:  python serve.py [port]     (default port 8000)
+Usage:  python serve.py [port]     (default port 8765)
 """
 import http.server
 import socketserver
@@ -12,8 +12,10 @@ import sys
 import urllib.parse
 from pathlib import Path
 
-PORT = int(sys.argv[1]) if len(sys.argv) > 1 else 8000
-ROOT = Path(__file__).resolve().parent
+PORT = int(sys.argv[1]) if len(sys.argv) > 1 else 8765
+SOURCE_ROOT = Path(__file__).resolve().parent
+DIST_ROOT = SOURCE_ROOT / 'dist'
+ROOT = DIST_ROOT if DIST_ROOT.is_dir() else SOURCE_ROOT
 
 
 class Handler(http.server.SimpleHTTPRequestHandler):
@@ -35,7 +37,7 @@ class Handler(http.server.SimpleHTTPRequestHandler):
 
 
 if __name__ == '__main__':
-    with socketserver.TCPServer(('', PORT), Handler) as httpd:
+    with socketserver.TCPServer(('127.0.0.1', PORT), Handler) as httpd:
         print(f'Zucks site running at http://localhost:{PORT}')
         try:
             httpd.serve_forever()
