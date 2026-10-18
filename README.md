@@ -27,6 +27,10 @@ dedicated nginx virtual host for `zucks.ddns.net`.
 
 ![Zucks English Template](./Template/zucks-en.webp)
 
+## Template-Ar
+
+![Zucks English Template](./Template/zucks-ar.webp)
+
 ## The transitions
 
 - **Point cloud** (`js/cloud.js`): 20,000 points (8,000 on mobile) in WebGL.
