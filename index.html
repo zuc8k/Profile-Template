@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Zucks — Community Builder</title>
+<meta name="description" content="Zucks builds, manages and grows Discord communities. Founder of Zucks Bot (2500+ members), with experience at vexo .">
+<meta name="theme-color" content="#e3cf9a">
+<meta name="color-scheme" content="dark">
+<meta property="og:title" content="Zucks — Community Builder">
+<meta property="og:description" content="Founder of Zucks Bot, 2500+ members. Community management and public relations. Working with vexo.">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='38' fill='%23e3cf9a'/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=IBM+Plex+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script type="module" src="js/app.js"></script>
+</head>
+<body>
+<canvas id="gl" aria-hidden="true"></canvas>
+<div class="vig" aria-hidden="true"></div>
+
+<div id="intro">
+  <div>
+    <p class="n ltr" id="introN" aria-label="Zucks"></p>
+    <p class="h" data-t="i1">I build, manage and grow communities.</p>
+    <button type="button" id="enter" data-t="i2" data-cur="enter">Enter</button>
+  </div>
+</div>
+
+<header class="bar">
+  <button type="button" class="mark" id="mark" data-go="0" aria-label="Zucks"><i></i><span data-t="name">Zucks</span></button>
+  <div class="lang">
+    <button type="button" data-lang="en" aria-pressed="true" aria-label="English">EN</button>
+    <button type="button" data-lang="ar" aria-pressed="false" aria-label="العربية" class="ar-glyph">ع</button>
+  </div>
+</header>
+
+<nav class="rail" aria-label="Scenes" data-ta="navl"><ol id="rail"></ol></nav>
+
+<main id="stage">
+  <p class="sr" aria-live="polite" id="live"></p>
+
+  <section class="sc s1" data-s="intro" aria-labelledby="t1">
+    <div class="tx">
+      <p class="who a"><b data-t="name">Zucks</b><span class="kick ltr">! Z U C K S</span></p>
+      <h1 class="big" id="t1"><span class="m d1"><span data-t="h1a">I build, manage</span></span><span class="m d2"><span data-t="h1b">and grow communities.</span></span></h1>
+      <p class="lede a d4" data-t="hl">Founder of Zucks Bot . Bot Server and Vexo.</p>
+      <ul class="roles a d6"><li data-t="ro1">Community builder</li><li data-t="ro2">Community manager</li><li class="ltr">Discord</li><li data-t="ro4">Public relations</li></ul>
+    </div>
+    <figure class="face"><img src="images\zucks.png" width="256" height="256" decoding="async" alt="Zucks's Discord avatar" data-ta="alt2"></figure>
+  </section>
+
+  <section class="sc s2" data-s="do" aria-labelledby="t2">
+    <div>
+      <h2 class="kick a" id="t2" data-t="w0">What I do. Pick one.</h2>
+      <div class="verbs a d2" id="verbs">
+        <button type="button" data-v="0" aria-pressed="true" data-t="v0">Build</button>
+        <button type="button" data-v="1" aria-pressed="false" data-t="v1">Manage</button>
+        <button type="button" data-v="2" aria-pressed="false" data-t="v2">Grow</button>
+        <button type="button" data-v="3" aria-pressed="false" data-t="v3">Connect</button>
+        <button type="button" data-v="4" aria-pressed="false" data-t="v4">Communicate</button>
+      </div>
+      <p class="say a d4" id="say" aria-live="polite"><span></span></p>
+    </div>
+  </section>
+
+  <section class="sc s3" data-s="ad" aria-labelledby="t3">
+    <div class="core">
+      <div class="adid a"><img src="images\zucksbot.gif" width="256" height="256" alt="Zucks Bot logo" data-ta="alt6"><span><span data-t="a0">Founder and owner</span><b class="ltr" id="t3">Zucks Bot</b></span></div>
+      <p class="num ltr a d1" id="num" aria-label="2500+">2500+</p>
+      <p class="cap a d3"><b data-t="a1">members.</b> <span id="ptcap"></span></p>
+      <button type="button" class="pill a d5" id="adBtn" aria-expanded="false" aria-controls="adMore" data-cur="explore"><span data-t="a5">Explore</span></button>
+    </div>
+    <div class="more" id="adMore">
+      <q lang="en" dir="ltr">The perfect place to get help, chat, make new friends, win prizes and earn money, all in one active community.</q>
+      <span class="sm" data-t="a2">The server's own description on Discord</span>
+      <span class="sm" id="adsrc" data-t="a3">Discord counted 2621+ members on 6 Sebtember 2026.</span>
+      <p class="go"><a class="ltr" href="https://discord.gg/zucks" target="_blank" rel="noopener" data-cur="join">discord.gg/zucks<svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l6-6M4 3h5v5"/></svg></a><a class="ltr" href="https://zuck.ddns.net/en" target="_blank" rel="noopener" data-cur="open">zuck.ddns.net/en<svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l6-6M4 3h5v5"/></svg></a></p>
+    </div>
+  </section>
+
+  <section class="sc s4" data-s="exp" aria-labelledby="t4">
+    <div>
+      <h2 class="kick a" id="t4" data-t="e0">Experience. Pick one to see it.</h2>
+      <div class="xl a d2" id="xl">
+        <button type="button" data-x="0" aria-pressed="true"><i></i><span class="ltr">Zucks Bot</span></button>
+        <button type="button" data-x="1" aria-pressed="false"><i></i><span class="ltr">Vexo</span></button>
+        <button type="button" data-x="2" aria-pressed="false"><i></i><span data-t="o2">Bot Server</span></button>
+      </div>
+    </div>
+    <div class="xd a d4" id="xd" aria-live="polite"><div class="in" id="xdIn"></div></div>
+  </section>
+
+  <section class="sc s5" data-s="now" aria-label="Current work" data-ta="n4">
+    <div class="tabs a" id="tabs"><button type="button" data-b="0" aria-pressed="true" class="ltr">Zucks Bot</button><button type="button" data-b="1" aria-pressed="false" class="ltr">Rize</button></div>
+    <article id="bV">
+      <div class="lg a"><img src="images\zucksbot.gif" width="168" height="168" alt="Zucks logo" data-ta="alt7"></div>
+      <p class="kick a d1" data-t="vv1">Working with Zucks</p>
+      <h2 class="ltr a d2">Zucks</h2>
+      <p class="w a d3" data-t="vv2">An all-in-one Discord bot: moderation, leveling, tickets, protection and stream alerts.</p>
+      <p class="go a d4"><a class="ltr" href="https://zuck.ddns.net/en" target="_blank" rel="noopener" data-cur="open">zucksbot<svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l6-6M4 3h5v5"/></svg></a><a class="ltr" href="https://discord.gg/jy7Fk2ynEy" target="_blank" rel="noopener" data-cur="join">discord.gg/jy7Fk2ynEy<svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l6-6M4 3h5v5"/></svg></a></p>
+    </article>
+  </section>
+
+  <section class="sc s6" data-s="contact" aria-labelledby="t6">
+    <div>
+      <h2 class="kick a" id="t6" data-t="c1">Message me on Discord</h2>
+      <strong class="handle ltr a d1" id="handle">zu8k</strong>
+      <button type="button" class="btn a d3" id="copy" data-t="copy" data-cur="copy">Copy username</button>
+      <nav class="rooms a d5" aria-label="Discord servers" data-ta="srv">
+        <a href="https://discord.gg/zucks" target="_blank" rel="noopener" data-cur="join"><img src="images\zucksbot.gif" width="256" height="256" alt=""><span class="ltr">Zucks Bot</span></a>
+        <a href="https://discord.gg/jy7Fk2ynEy" target="_blank" rel="noopener" data-cur="join"><img class="raw" src="images\vexo.png" width="168" height="168" alt=""><span class="ltr">Vexo</span></a>
+      </nav>
+      <p class="note a d7" data-t="ft">Logos belong to their owners and come from their official websites and Discord servers. The point cloud is an original illustration, not data from Discord.</p>
+    </div>
+  </section>
+</main>
+
+<div class="ctl">
+  <button type="button" id="prev" aria-label="Previous scene" data-ta="pv"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M10 3L5 8l5 5"/></svg></button>
+  <button type="button" id="next"><span><small data-t="nx">Next</small><b id="nextL"></b></span><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 3l5 5-5 5"/></svg></button>
+</div>
+<div class="mob">
+  <button type="button" class="ar" id="mPrev" aria-label="Previous scene" data-ta="pv"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M10 3L5 8l5 5"/></svg></button>
+  <button type="button" id="mNow" aria-haspopup="true"><b id="mIdx">01 / 06</b><span id="mLab"></span></button>
+  <button type="button" class="ar" id="mNext" aria-label="Next scene" data-ta="nxa"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 3l5 5-5 5"/></svg></button>
+</div>
+<div class="sheet" id="sheet"><ol id="sheetL"></ol></div>
+
+<div class="cur" id="cur" aria-hidden="true"><i></i><span id="curT"></span></div>
+</body>
+</html>
