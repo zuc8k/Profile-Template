@@ -21,6 +21,10 @@ ES modules need HTTP — opening `index.html` via `file://` will not work.
 The local server listens only on `127.0.0.1:8765`; public traffic is proxied by a
 dedicated nginx virtual host for `zucks.ddns.net`.
 
+
+
+## Template-En
+Template\zucks-en.webp
 ## The transitions
 
 - **Point cloud** (`js/cloud.js`): 20,000 points (8,000 on mobile) in WebGL.
