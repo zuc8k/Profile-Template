@@ -156,8 +156,8 @@ function paintSource() {
 /* 04: experience */
 const arrow = '<svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5"/></svg>';
 const XL = [
-  { logo: '<img src="images/zucksbot.gif" width="256" height="256" alt="">', name: 'Zucks Bot', links: [['arabicdiscord.com', 'https://arabicdiscord.com', 'open'], ['discord.gg/zucks', 'https://discord.gg/zucks', 'join']] },
-  { logo: '<img class="raw" src="images/zucksbot.gif" width="140" height="37" alt="zucks">', name: 'zucks', links: [['zucks.io', 'https://zucks.io', 'open'], ['discord.gg/zucks', 'https://discord.gg/zucks', 'join']] },
+  { logo: '<img src="images/zucksbot.gif" width="256" height="256" alt="">', name: 'Zucks Bot', links: [['zucks', 'https://zuck.ddns.net/en', 'open'], ['discord.gg/zucks', 'https://discord.gg/zucks', 'join']] },
+  { logo: '<img class="raw" src="images/zucksbot.gif" width="140" height="37" alt="zucks">', name: 'zucks', links: [['zucksbot', 'https://zuck.ddns.net/en', 'open'], ['discord.gg/zucks', 'https://discord.gg/zucks', 'join']] },
   { key: 'o2', links: [] },
   { key: 'o3', links: [] },
   { logo: '<img class="raw" src="images/vexo.png" width="168" height="168" alt="">', name: 'vexo', links: [['vexo.ddns.net', 'https://vexo.ddns.net/', 'open'], ['discord.gg/jy7Fk2ynEy', 'https://discord.gg/jy7Fk2ynEy', 'join']] },
