@@ -1,6 +1,6 @@
 # Zucks — Community Builder
 
-A single-page portfolio in the style of ra3d.me: one body of points that rearranges
+A single-page portfolio in the style of one body of points that rearranges
 into every scene, no page scroll — scenes are states, changed by click, key or swipe.
 
 ## Build and run
