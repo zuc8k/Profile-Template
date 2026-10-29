@@ -68,7 +68,7 @@ export function createCloud(canvas, { count, reduce, isRtl }) {
       for (let i = 0; i < N; i++) { const b = .55 + rnd() * .95, w = rnd(), q = w < .05 ? GOLD : w < .5 ? SILVER : ADC; c[i * 3] = q[0] * b; c[i * 3 + 1] = q[1] * b; c[i * 3 + 2] = q[2] * b; }
     },
     community(p, c) { F.ad(p, c, .42); },
-    probot(p, c) {
+    zucksbot(p, c) {
       const L = 19, per = Math.floor(N / L);
       for (let i = 0; i < N; i++) {
         if (i % 16 === 0) { p[i * 3] = gs() * .01; p[i * 3 + 1] = (rnd() * 2 - 1) * 1.05; p[i * 3 + 2] = gs() * .01; }
@@ -98,7 +98,7 @@ export function createCloud(canvas, { count, reduce, isRtl }) {
       }
       tint(c, WARM, .12);
     },
-    vetox(p, c, sx = 0, sc = 1, lo = 0, hi = N) {
+    vexo(p, c, sx = 0, sc = 1, lo = 0, hi = N) {
       const ed = [[0,0,0,1,0,0],[0,1,0,1,0,0],[0,0,1,1,0,0],[0,1,1,1,0,0],[0,0,0,0,1,0],[1,0,0,0,1,0],[0,0,1,0,1,0],[1,0,1,0,1,0],[0,0,0,0,0,1],[1,0,0,0,0,1],[0,1,0,0,0,1],[1,1,0,0,0,1]];
       for (let i = lo; i < hi; i++) {
         const m = i % 27, e = ed[Math.floor(rnd() * 12)], u = rnd(), s = .34, g = .58;
@@ -107,7 +107,7 @@ export function createCloud(canvas, { count, reduce, isRtl }) {
         const b = .7 + rnd() * .9, q = m === 13 ? [.8, .9, 1] : VXC; c[i * 3] = q[0] * b; c[i * 3 + 1] = q[1] * b; c[i * 3 + 2] = q[2] * b;
       }
     },
-    rize(p, c, sx = 0, sc = 1, lo = 0, hi = N) {
+    vexo(p, c, sx = 0, sc = 1, lo = 0, hi = N) {
       // a tournament bracket seen in 3D: 32 entries narrowing to one winner at the top
       const L = 5, ed = [];
       const node = (l, k) => { const cnt = Math.pow(2, l), a = (k + .5) / cnt * TAU, r = l * .27; return [r * Math.cos(a), .95 - l * .42, r * Math.sin(a)]; };
@@ -121,7 +121,7 @@ export function createCloud(canvas, { count, reduce, isRtl }) {
         const b = .4 + rnd() * .7 + (5 - e[2]) * .12; c[i * 3] = RZC[0] * b; c[i * 3 + 1] = RZC[1] * b; c[i * 3 + 2] = RZC[2] * b;
       }
     },
-    duo(p, c) { const h = Math.floor(N / 2), s = isRtl() ? -1 : 1; F.vetox(p, c, -1.5 * s, .78, 0, h); F.rize(p, c, 1.5 * s, .82, h, N); },
+    duo(p, c) { const h = Math.floor(N / 2), s = isRtl() ? -1 : 1; F.zucks(p, c, -1.5 * s, .78, 0, h); F.rize(p, c, 1.5 * s, .82, h, N); },
     ring(p, c) { for (let i = 0; i < N; i++) { const w = i % 10, r = w < 6 ? 1.2 + gs() * .004 : w < 9 ? 1.2 + Math.abs(gs()) * .5 : 1.75 + gs() * .004, a = rnd() * TAU; p[i * 3] = r * Math.cos(a); p[i * 3 + 1] = r * Math.sin(a); p[i * 3 + 2] = gs() * .01; } tint(c, SILVER, .3); }
   };
 
