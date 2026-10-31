@@ -5,8 +5,6 @@ ZUCKS — Community Builder
 
 An Interactive Portfolio Experience
 
-A next-generation single-page portfolio built around a dynamic particle system that transforms into multiple interactive scenes.
-
 <br>
 
 🇬🇧 ENGLISH   |   🇪🇬 العربية
@@ -98,7 +96,7 @@ The local server listens exclusively on 127.0.0.1:8765. Public traffic is proxie
 
 ## Template-Ar
 
-![Zucks English Template](./Template/zucks-ar.webp
+![Zucks English Template](./Template/zucks-ar.webp)
 
 نظرة عامة
 
