@@ -173,10 +173,3 @@ ZUCKS — Community Builder
 One Experience. Endless Possibilities.
 
 </div>
-
-⸻
-
-Template-En
-
-Template-Ar
-
