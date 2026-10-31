@@ -18,7 +18,9 @@ A next-generation single-page portfolio built around a dynamic particle system t
 
 ⸻
 
-🇬🇧 English
+## Template-En
+
+![Zucks English Template](./Template/zucks-en.webp)
 
 Overview
 
@@ -94,7 +96,9 @@ The local server listens exclusively on 127.0.0.1:8765. Public traffic is proxie
 
 ⸻
 
-🇪🇬 العربية
+## Template-Ar
+
+![Zucks English Template](./Template/zucks-ar.webp
 
 نظرة عامة
 
